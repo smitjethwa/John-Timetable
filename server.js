@@ -4,7 +4,7 @@ var mongoose = require('mongoose');
 var Days = require('./models/days');
 var app = express();
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0-ncyrq.mongodb.net/timetable?retryWrites=true', { useNewUrlParser: true }, function(err){
+mongoose.connect('mongodb+srv://[username]:[password]@cluster0-ncyrq.mongodb.net/timetable?retryWrites=true', { useNewUrlParser: true }, function(err){
     if(err){
         console.log('Not connected to the database');
     }else{
